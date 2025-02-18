@@ -1,0 +1,2 @@
+# React useState Hook Async Update Bug
+This repository demonstrates a common bug in React applications involving asynchronous updates to state using the `useState` hook.  The bug arises from using the previous state value in `setTimeout`, this approach is not reliable since the previous state value might have changed before the callback function in `setTimeout` is executed. The solution shows the correct way to handle asynchronous updates using functional updates and the `prevCount` parameter. 
